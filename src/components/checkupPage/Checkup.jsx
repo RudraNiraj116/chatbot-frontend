@@ -16,7 +16,7 @@ const Checkup = ({ onBack }) => {
 
   setResult("⏳ Checking health data...");
   try {
-    const response = await fetch("http://localhost:5000/api/gemini/health-check", {
+    const response = await fetch("https://chatbot-backend-azure-sigma.vercel.app/api/gemini/health-check", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
